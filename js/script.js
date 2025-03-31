@@ -16,3 +16,23 @@ for (let i = 1; i < bikes.length; i++){
     }
 }
 console.log(biciLeggera);
+
+
+//array di oggetti per squadre di calcio ogni squadra avra diverse proprieta nomi punti e falli, tutte settate a 0 solo una da completare 
+const squadre = [
+    {
+        nome: "juventus",
+        punti: 0,
+        falli: 0,
+    },
+    {
+        nome: "inter",
+        punti: 0,
+        falli: 0,
+    },
+    {
+        nome: "milan",
+        punti: 0,
+        falli: 0,
+    },
+];
