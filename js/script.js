@@ -36,3 +36,14 @@ const squadre = [
         falli: 0,
     },
 ];
+
+//definizione funzione per numeri casuali
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+//ciclo per generare i punti e falli casuali per ogni squadra
+for (let i = 0; i < squadre.length; i++){
+    squadre[i].punti = getRandomInt(0, 100);
+    squadre[i].falli = getRandomInt(0, 100);
+}
+console.log(squadre);
