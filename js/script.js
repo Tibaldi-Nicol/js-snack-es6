@@ -10,3 +10,9 @@ const bikes = [
 let biciLeggera = bikes[0];
 console.log(biciLeggera);
 //ciclo per confrontare le bici per trovare uella con il peso minore
+for (let i = 1; i < bikes.length; i++){
+    if (bikes[i].peso < biciLeggera.peso){
+        biciLeggera = bikes[i];
+    }
+}
+console.log(biciLeggera);
