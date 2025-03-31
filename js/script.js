@@ -47,3 +47,12 @@ for (let i = 0; i < squadre.length; i++){
     squadre[i].falli = getRandomInt(0, 100);
 }
 console.log(squadre);
+//creo un array vuoto per le squadre con piu falli
+const squadrePiuFalli = [];
+//ciclo per trovare la squadra con piu falli
+for(let i=0; i < squadre.length; i++){
+    if (squadre[i].falli > 50){
+        squadrePiuFalli.push(squadre[i]);
+    }
+}
+console.log(squadrePiuFalli);
